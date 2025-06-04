@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/textViewTitle5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 4/5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Image -->
+        <ImageView
+            android:id="@+id/imageViewQuestion5"
+            android:layout_width="250dp"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Question -->
+        <TextView
+            android:id="@+id/textViewQuestion5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quelle est la langue la plus parlée au monde ?"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Choix Radio -->
+        <RadioGroup
+            android:id="@+id/radioGroupOptions5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anglais" />
+
+            <RadioButton
+                android:id="@+id/radioButton25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Espagnol" />
+
+            <RadioButton
+                android:id="@+id/radioButton35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chinois Mandarin" />
+        </RadioGroup>
+
+        <!-- Bouton Valider -->
+        <Button
+            android:id="@+id/buttonValidate5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>

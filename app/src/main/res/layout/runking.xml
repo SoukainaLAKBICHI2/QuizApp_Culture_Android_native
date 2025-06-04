@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/titleResponses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score History"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="84dp"
+        android:layout_marginBottom="16dp"
+        android:textColor="#FFFFFF" />
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#6DB6D5"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Utilisateur"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="start" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Date"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Score"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="end" />
+    </LinearLayout>
+
+
+    <!-- ListView to display scores -->
+    <ListView
+        android:id="@+id/listViewRanking"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="#BBBBBB"
+        android:dividerHeight="1dp"
+        android:paddingTop="8dp"
+        />
+
+    <!-- Button to go back to score -->
+    <Button
+        android:id="@+id/buttonBackToScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back to Score"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+</LinearLayout>

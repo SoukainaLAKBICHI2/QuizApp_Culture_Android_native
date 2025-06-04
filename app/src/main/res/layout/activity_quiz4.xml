@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/back">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Titre -->
+        <TextView
+            android:id="@+id/textViewTitle4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 4/5"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Image -->
+
+        <!-- Question -->
+        <ImageView
+            android:id="@+id/imageViewQuestion4"
+            android:layout_width="208dp"
+            android:layout_height="149dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/textViewQuestion4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Combien y a-t-il de continents sur Terre ?"
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Choix Radio -->
+        <RadioGroup
+            android:id="@+id/radioGroupOptions4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radioButton14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <RadioButton
+                android:id="@+id/radioButton24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <RadioButton
+                android:id="@+id/radioButton34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7" />
+        </RadioGroup>
+
+        <!-- Bouton Valider -->
+        <Button
+            android:id="@+id/buttonValidate4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_marginTop="24dp" />
+    </LinearLayout>
+</ScrollView>
